@@ -22,9 +22,6 @@ body{
     font-family: 'Rajdhani', sans-serif;
     color: var(--color-title-darkgreen);
 }
-.header-title {
-    display: flex;
-}
 
 header {
     height: 25vh;
@@ -45,36 +42,79 @@ header h1 {
     align-items: center;
 }
 
-.container-img1 img {
-    width: 200px;
-    height: 100%;
-    object-fit: cover;
+.header-title  {
+    display: flex;
 
+    margin-left: -20px;
 
 }
-.container-img2 img {
-    width: 200px;
+
+.header-title  img{
+    margin-right: 10px;
+}
+
+.container-img1 {
+    background-image: url("./assets/food1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -10px left -30px;
     height: 100%;
-    object-fit: cover;
+    width: 200px;
+
+}
+
+.container-img2 {
+    background-image: url("./assets/food2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 200px;
 
 }
 .dieta-title {
     margin-left:10px;
 
 }
+
 header h1 {
     color: var(--color-white);
 }
 
-/* Responsividade Mobile */
 
+
+/* Responsividade a partir de  Tablet */
 
 @media (min-width: 600px) {
     header h1 {
-        font-size: 60px  !important;
+        font-size: 35px  !important;
 
     }
     header img {
-        width: 40px;
+        width: 24px;
     }
+
+    .container-img1 {
+    background-position: center;
+
+    }
+
+    .container-img2 {
+        background-position: center;
+
+
+    }
+}
+
+/* Responsividade PC */
+
+@media (min-width: 900px) {
+    header h1 {
+        font-size: 55px  !important;
+
+    }
+    header img {
+        width: 35px;
+    }
+
+
 }

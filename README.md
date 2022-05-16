@@ -32,6 +32,11 @@ O [Desgin do Projeto](https://www.figma.com/file/XMPmcHGCRv0BggPEw3QrWw/) foi de
 
 você precisa ter um bom editor de código, como por exemplo o [VSCode](https://code.visualstudio.com/).
 
+Atualmente o projeto pode ser executado através do live server.
+
+Caso não abra diretamente na página inicial, basta acessar:
+http://127.0.0.1:5500/src/pages/homepage/
+
 ### Tecnologias utilizadas
 
 As seguintes tecnologias foram utilizadas no projeto:

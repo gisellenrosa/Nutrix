@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Nutrix</title>
+</head>
+<body>
+    <form>
+    <div class="content">
+      <div class="onlyform">
+      <div class="campo">
+        <label for="objetivo">Objetivo</label>
+        <select name="objetivo" id="Objetivo" required>
+         <option selected disabled value="">Selecione</option>      
+         <option value="perdaDePeso">Perda de peso</option>
+         <option value="manutençãoDoPeso">Manutenção do peso</option>
+         <option value="ganhoDePeso">Ganho de peso</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="idade">Idade</label>
+        <input type="number" name="idade" id="idade" placeholder="anos" min="1" max="120" required>
+      </div>
+      <div class="campo">
+        <label for="peso">Peso</label>
+        <input type="number" name="peso" id="peso" placeholder="kg" min="1" max="300" required>
+      </div>
+      <div class="campo">
+        <label for="altura">Altura</label>
+        <input type="number" name="altura" id="altura" placeholder="cm" min="60" max="240" required>
+      </div>
+      <div class="campo">
+        <label for="frequência da atividade física"><div>Frequência</div><div>da atividade</div><div>física</div></label>
+        <select name="frequencia" id="Frequência da atividade física" required>
+         <option selected disabled value="">Selecione</option>
+         <option value="sedentário">Sedentário</option>
+         <option value="exercicioLeve">Exercício Leve</option>
+         <option value="exercicioModerado">Exercício Moderado</option>
+        </select>
+      </div>
+    </div>
+      <div>
+          <img src="https://i.ibb.co/DksZhc0/image-71.png">
+      </div>
+    </div>  
+      </div>
+      <div class="footersqn">
+        <fieldset class="info">
+              <div>Os dados coletados são usados na equação</div>
+              <div>de Harris-Benedict que é utilizada para calcular o gasto</div>
+              <div>de calorias atual do seu metabolismo e coordenalo com</div>
+              <div>o seu objetivo para criar uma dieta que te auxilie na sua</div> 
+              <div>jornada.</div>
+        </fieldset>
+        <button class="seta" type="submit" ><div>Avançar</div><img src="./Arrow 3.png" alt="seta"></button>
+      </div>
+      </form>
+      
+      
+</body>
+</html>

@@ -110,6 +110,12 @@ header h1 {
     padding-right: 7vh;
     padding-left: 7vh;
 
+    border: 0;
+    text-decoration: none;
+}
+
+.btn-start div {
+    padding-top: 19px;
 }
 
 .btn-start:hover {

@@ -11,7 +11,7 @@
 }
 
 * {
-    font-family: 'Rajdhani', sans-serif;
+    font-family:  Rajdhani , sans-serif;
     margin: 0;
     padding: 0;
     border: 0;
@@ -98,12 +98,12 @@ header h1 {
 .btn-start {
     font-size: 26px;
     font-weight: 600;
-    
+
     height: 80px;
     color: var(--color-white);
     background: var(--color-darkgreen);
     cursor: pointer;
-    
+
     border-radius: 48px;
     margin-top: 12vh;
 
@@ -189,7 +189,7 @@ header h1 {
     .btn-start {
         font-size: 28px;
         padding-right: 10vw;
-        padding-left: 10vw; 
+        padding-left: 10vw;
     }
 
     .btn-footer {

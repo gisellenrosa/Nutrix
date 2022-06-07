@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../../assets/silverware.svg"/>
+  <link rel="icon" href="../../assets/silverware.svg" />
   <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,66 +16,69 @@
 <body>
   <header>
     <a href="../homepage">
-      <img class="arrow" src="../../assets/arrow.svg" alt="seta">
+      <img class="arrow" src="../../assets/arrow.svg" alt="Seta">
     </a>
     <h1 class="header-title">
-      Dados necessários para calcular a dieta
+      Dados calculados
     </h1>
   </header>
-  <form>
-    <div class="content">
-      <div class="onlyform">
-        <div class="field">
-          <label for="objetivo">Objetivo</label>
-          <select name="objetivo" id="Objetivo" required>
-            <option selected disabled value="">Selecione</option>
-            <option value="perdaDePeso">Perda de peso</option>
-            <option value="manutençãoDoPeso">Manutenção do peso</option>
-            <option value="ganhoDePeso">Ganho de peso</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="idade">Idade</label>
-          <input type="number" name="idade" id="idade" placeholder="anos" min="1" max="120" required>
-        </div>
-        <div class="field">
-          <label for="peso">Peso</label>
-          <input type="number" name="peso" id="peso" placeholder="kg" min="1" max="300" required>
-        </div>
-        <div class="field">
-          <label for="altura">Altura</label>
-          <input type="number" name="altura" id="altura" placeholder="cm" min="60" max="240" required>
-        </div>
-        <div class="field">
-          <label for="frequência da atividade física">
-            <div>Frequência</div>
-            <div>da atividade</div>
-            <div>física</div>
-          </label>
-          <select name="frequencia" id="Frequência da atividade física" required>
-            <option selected disabled value="">Selecione</option>
-            <option value="sedentário">Sedentário</option>
-            <option value="exercicioLeve">Exercício Leve</option>
-            <option value="exercicioModerado">Exercício Moderado</option>
-          </select>
-        </div>
-      </div>
-      <img src="../../assets/foodForm.png">
-    </div>
-    </div>
-    <div class="form-footer">
-      <fieldset class="info">
-        Os dados coletados são usados na equação
-        de Harris-Benedict que é utilizada para calcular o gasto
-        de calorias atual do seu metabolismo e coordenalo com
-        o seu objetivo para criar uma dieta que te auxilie na sua
-        jornada.
-      </fieldset>
-      <button class="btn-next" type="submit">
-        <div>Avançar</div><img src="../../assets/arrow2.png" alt="seta">
-      </button>
-    </div>
-  </form>
-</body>
 
+  <div>
+
+    <div class="box-data-calculations">
+      <div class="box-data-calculations-left">
+        <section class="box-data-calculations-left-section">
+          <h3 class="box-data-calculations-section-title"> Gastro calorico atual</h3>
+          <div class="box-data-calculations-section-result"> Aguardando resultado </div>
+        </section>
+
+        <section class="box-data-calculations-left-section">
+          <h3 class="box-data-calculations-section-title"> Ingestão de calorias sujerida</h3>
+          <div class="box-data-calculations-section-result"> Aguardando resultado </div>
+        </section>
+      </div>
+
+      <div class="box-data-calculations-center">
+        <section class="box-data-calculations-center-section">
+          <h3 class="box-data-calculations-section-title"> Distribuição de macros sujerida</h3>
+          <div class="box-data-calculations-section-center-result">
+            <div class="box-data-calculations-section-center-result-list-item">
+              <h4 class="box-data-calculations-section-center-result-title"> Proteína </h4>
+              <p> Aguardando resultado</p>
+            </div>
+            <div class="box-data-calculations-section-center-result-list-item">
+              <h4 class="box-data-calculations-section-center-result-title"> Gordura </h4>
+              <p> Aguardando resultado</p>
+            </div>
+            <div class="box-data-calculations-section-center-result-list-item">
+              <h4 class="box-data-calculations-section-center-result-title"> Carboidratos </h4>
+              <p> Aguardando resultado</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="box-data-calculations-rigth">
+        <section class="box-data-calculations-right-section">
+          <h3 class="box-data-calculations-section-title"> IMC </h3>
+          <div class="box-data-calculations-section-result"> Aguardando resultado </div>
+        </section>
+        <section>
+          <p>
+            Informações sobre o IMC atual (baixo peso, peso normal, sobre-peso, obesidade
+          </p>
+        </section>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="form-footer">
+    <button class="btn-next" type="submit">
+      <div>Avançar</div><img src="../../assets/arrow2.png" alt="seta">
+    </button>
+  </div>
+
+</body>
 </html>

@@ -48,52 +48,81 @@ header {
     cursor: pointer;
 }
 
-.onlyform {
-    padding-top: 40px;
-}
-
-.content {
+.box-data-calculations{
+    background: var(--color-secondary-darkgreen);
+    max-width: 1197px;
+    margin: 84px auto;
+    border-radius: 20px;
+    padding: 29px 32px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
 }
 
-.content img {
-    display: none;
-}
-
-.field {
+.box-data-calculations-left, .box-data-calculations-rigth{
     display: flex;
-    margin-bottom: 2em;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-}
+    align-items: center;
+    width: 30%;
+    padding: 60px 0px 0px 0px;
+ }
 
-.field label {
+ .box-data-calculations-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    text-align: center;
+ }
+
+ .box-data-calculations-center-section {
+    max-width: 339px;
+    width: 100%;
+ }
+
+ .box-data-calculations-section-center-result{
+    border-radius: 15px;
+    background: var(--color-white);
+    padding: 25px 10px;
+ }
+
+ .box-data-calculations-section-center-result-list-item{
+     margin-bottom: 40px;
+ }
+
+ .box-data-calculations-section-center-result-title{
+    font-family: 'Rajdhani', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+ }
+
+ .box-data-calculations-rigth{
+    width: 30%;
+ }
+
+ .box-data-calculations-right-section{
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+ }
+
+ .box-data-calculations-section-title {
     margin-bottom: 0.2em;
     display: block;
     padding-right: 15px;
     padding-top: 4px;
-    font-size: 20px;
-    font-weight: 560;
-
+    font-size: 28px;    
+    font-weight: 600;
 }
 
-.field input {
-    height: 36px;
-    width: 160px;
-    display: flex;
+.box-data-calculations-section-result {
     border-radius: 15px;
-    padding-left: 12px;
-    border: 0px;
-}
-
-.field select {
-    height: 40px;
-    width: 171px;
-    display: flex;
-    border-radius: 15px;
-    padding-left: 10px;
-    border: 0px;
+    background: var(--color-white);
+    padding: 25px 10px;
 }
 
 .form-footer {
@@ -104,25 +133,13 @@ header {
     align-items: center;
 }
 
-.info {
-    width: 80%;
-    display: flex;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 15px;
-    background-color: #D0DECF;
-    border: 0px;
-    margin-bottom: 30px;
-}
 
 .btn-next {
     font-size: 30px;
     font-weight: 600;
 
     height: 80px;
-    width: 73%;
+    width: 10%;
     color: var(--color-white);
     background: var(--color-title-darkgreen);
     cursor: pointer;
@@ -135,7 +152,7 @@ header {
     display: flex;
 
     margin-bottom: 20px;
-
+    justify-content: center;
     border: 0;
 }
 
@@ -152,66 +169,31 @@ header {
     padding-top: 8px;
 }
 
+
+
+
 /* Responsividade a partir de  Tablet */
 
-@media (min-width: 600px) {
-    .btn-next {
-        width: 310px;
-        padding-left: 75px;
-    }
-
-    .arrow {
-        height: 20px;
-        position: absolute;
-        padding-top: 22px;
-        left: 0;
-        top: 0;
-        
-    }
-
-    .header-title {
-        font-size: 25px;
-        padding-bottom: 10px;
-    }
-    
-    
-
-}
-
-/* Responsividade PC */
-
-@media (min-width: 900px) {
-
-    .header-title {
-        font-size: 30px;
-        padding-bottom: 10px;
-    }
-
-    .content {
-        padding-top: 50px;
-    }
-
-    .content img {
+@media (max-width: 768px)   {
+    .box-data-calculations{
         display: flex;
-        height: 400px;
+        flex-direction: column;
     }
 
-    .form-footer {
-        flex-direction: row;
-        padding-top: 50px;
+    .box-data-calculations-left{
+        width: 100%;
+        padding:  0px;
     }
 
-    .btn-next {
-        width: 270px;
+    .box-data-calculations-center{
+        width: 100%;
     }
-
-    .info {
-        width: 520px;
-        font-size: 22px;
-        font-weight: 500;
-    }
-
-    .onlyform {
-        padding-left: 100px;
+    .box-data-calculations-rigth{
+        width:100%
     }
 }
+
+
+
+
+

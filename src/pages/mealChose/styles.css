@@ -1,0 +1,359 @@
+:root {
+    --color-lightgreen: rgb(220, 233, 226);
+    --color-green: rgba(37, 117, 97, 0.4);
+    --color-darkgreen: rgb(12, 68, 54, 1);
+    --color-title-darkgreen: rgb(20, 101, 81);
+    --color-white: #FFFFFF;
+    --color-lightergreen: #DCE9E2;
+    --color-primary-green: #ABCFA8;
+    --color-secondary-green: #D0DECF;
+    --color-background: #F1F1F1;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-size: 18px;
+}
+
+header {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    background-color: var(--color-title-darkgreen);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.header-title {
+    color: var(--color-white);
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.counter {
+    padding-right: 15px;
+}
+
+.calendar {
+    height: 30px;
+}
+
+.arrow {
+    height: 20px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.counter {
+    color: var(--color-white);
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meal-select-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.meal-option {
+    width: 80%;
+    height: 500px;
+    background-color: var(--color-secondary-green);
+    border-radius: 49px;
+    padding-bottom: 8px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.meal-option:active {
+    border: 3px var(--color-darkgreen) solid;
+    color: var(--color-darkgreen);
+}
+
+.meal-option:active>article {
+    background: var(--color-darkgreen);
+    color: var(--color-secondary-green);
+}
+
+.meal-title {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.meal-info-line {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-bottom: 25px;
+
+}
+
+.meal-info-line > h3 {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+/* Especificações por nutriente, devido a particularidade de cada icon */
+
+.meal-quantity-carbohydrate {
+    padding-top: 15px;
+    padding-left: 9.5px;
+}
+
+.meal-quantity-protein {
+    padding-top: 6px;
+    padding-left: 11px;
+}
+
+.meal-quantity-kcal {
+    padding-top: 7px;
+    padding-left: 20px;
+}
+
+.meal-quantity-fat {
+    padding-top: 10px;
+    padding-left: 11px;
+}
+
+.meal-info-icons {
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.meal-more-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    background-color: var(--color-primary-green);
+    border-radius: 40px;
+}
+
+.info {
+    width: 80%;
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+    border: 0px;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.btn-next {
+    font-size: 30px;
+    font-weight: 600;
+
+    height: 80px;
+    width: 73%;
+    color: var(--color-white);
+    background: var(--color-title-darkgreen);
+    cursor: pointer;
+
+    border-radius: 48px;
+    padding-top: 20px;
+    bottom: 2;
+
+    padding-left: 55px;
+    display: flex;
+
+    margin-bottom: 20px;
+
+    border: 0;
+}
+
+.btn-next:hover {
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.4s ease 0s;
+}
+
+.btn-next img {
+    padding-left: 13px;
+    padding-top: 8px;
+}
+
+.modal-area {
+    display: flex;
+}
+
+.modal-makings {
+    width: 80%;
+    height: 400px;
+    background-color: var(--color-secondary-green);
+    border-radius: 49px;
+    overflow: scroll;
+    position: absolute;
+    display: none;
+    align-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.modal-makings:hover {
+    display: block;
+}
+
+.modal-title {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    background-color: var(--color-primary-green);
+}
+
+.modal-title>h2 {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.modal-title>p {
+    padding-top: 5px;
+    font-size: 22px;
+}
+
+.food-info-line {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-bottom: 25px;
+}
+
+.food-info-line>h3 {
+    font-weight: 400;
+    font-size: 25px;
+
+}
+
+.food-info-line>img {
+    padding-left: 20px;
+}
+
+
+.meal-icon:hover + .modal-makings{
+    display: block;
+}
+
+
+
+
+/* Responsividade a partir de  Tablet */
+
+@media (min-width: 600px) {
+    .arrow {
+        height: 20px;
+        position: absolute;
+        padding-top: 22px;
+        left: 0;
+        top: 0;
+
+    }
+
+    .header-title {
+        font-size: 30px;
+        padding-top: 5px;
+    }
+
+    .calendar {
+        height: 45px;
+    }
+
+    .meal-select-area {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
+
+
+    .meal-option {
+        width: 40%;
+        justify-content: space-between;
+
+        margin-top: 30px;
+
+    }
+
+    .modal-makings {
+        width: 40%;
+    }
+
+    .btn-next {
+        width: 310px;
+        padding-left: 75px;
+    }
+
+}
+
+/* Responsividade PC */
+
+@media (min-width: 900px) {
+
+    .btn-next {
+        width: 270px;
+    }
+
+    .calendar {
+        height: 50px;
+    }
+
+    .meal-select-area {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+
+    .meal-option {
+        width: 22%;
+        justify-content: space-between;
+        margin-top: 30px;
+
+    }
+
+    .modal-makings {
+        width: 22%;
+    }
+
+
+
+}

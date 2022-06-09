@@ -46,6 +46,9 @@ header {
     padding-left: 15px;
     padding-bottom: 5px;
     cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 26px;
 }
 
 .box-data-calculations{

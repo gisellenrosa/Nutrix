@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../../assets/silverware.svg"/>
+  <link rel="icon" href="../../assets/silverware.svg" />
   <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
       Dados necessários para calcular a dieta
     </h1>
   </header>
-  <form>
+  <form action="../nutritionalResults">
     <div class="content">
       <div class="onlyform">
         <div class="field">
@@ -37,6 +37,16 @@
         <div class="field">
           <label for="idade">Idade</label>
           <input type="number" name="idade" id="idade" placeholder="anos" min="1" max="120" required>
+        </div>
+        <div class="field">
+          <label for="Gênero">
+            <div>Sexo biológico</div>
+          </label>
+          <select name="sexo" id="sexo biologico" required>
+            <option selected disabled value="">Selecione</option>
+            <option value="mas">Masculino</option>
+            <option value="fem">Feminino</option>
+          </select>
         </div>
         <div class="field">
           <label for="peso">Peso</label>
@@ -72,10 +82,11 @@
         jornada.
       </fieldset>
       <button class="btn-next" type="submit">
-        <div>Avançar</div><img src="../../assets/arrow2.png" alt="seta">
+        <div>Avançar</div>
+        <img src="../../assets/arrow2.png" alt="seta">
       </button>
     </div>
   </form>
 </body>
-
+<script type="text/javascript" src="script.js"></script>
 </html>

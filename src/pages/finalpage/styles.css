@@ -147,6 +147,7 @@ footer {
     background-color: var(--color-darkgreen);
     padding: 20px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .btn-footer img {

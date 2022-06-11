@@ -1,5 +1,5 @@
 let nextButton = document.getElementById('next-button');
 
     nextButton.onclick = function() {
-        window.location = '../finalpage';
+        window.location = '../mealChose';
     }

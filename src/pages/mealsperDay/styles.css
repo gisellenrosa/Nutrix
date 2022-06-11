@@ -68,6 +68,7 @@ main ol li {
     border-radius: 35px;
     text-align: center;
     justify-content: space-evenly;
+    cursor: pointer;
 }
 
 main ol li:active {

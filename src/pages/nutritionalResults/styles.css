@@ -33,12 +33,12 @@ header {
 }
 
 .header-title {
-    color: var(--color-white);  
+    color: var(--color-white);
     font-size: 20px;
     font-weight: 400;
     text-align: center;
     margin-left: 5px;
-    margin-right: 12px; 
+    margin-right: 12px;
 }
 
 .arrow {
@@ -148,7 +148,7 @@ header {
     font-weight: 600;
 
     height: 80px;
-    width: 13%;
+    width: 73%;
     color: var(--color-white);
     background: var(--color-title-darkgreen);
     cursor: pointer;
@@ -179,10 +179,20 @@ header {
 }
 
 
-
 /* Responsividade a partir de  Tablet */
 
 @media (max-width: 768px)   {
+
+    .header-title {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    .btn-next {
+        width: 310px;
+        padding-left: 75px;
+    }
+
     .box-data-calculations{
         display: flex;
         flex-direction: column;
@@ -198,6 +208,20 @@ header {
     }
     .box-data-calculations-rigth{
         width:100%
+    }
+}
+
+/* Responsividade PC */
+
+@media (min-width: 900px) {
+
+    .header-title {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    .btn-next {
+        width: 270px;
     }
 }
 

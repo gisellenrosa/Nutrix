@@ -17,20 +17,22 @@ function frequenciaExercicio() {
 
 function ingestCal(calc) {
     if (objetivo.value === "perdaDePeso") {
-        return (calc - 500).toFixed(2)
+        var calculado = (calc - 500)
+        return calculado.toFixed(2)
     } else if (objetivo.value === "ganhoDePeso") {
-        return (calc + 500).toFixed(2)
+        var calculado = (calc + 500)
+        return calculado.toFixed(2)
     } else {
         return calc.toFixed(2)
     }
 }
 
 function calculadoraMacroProteina(calc) {
-    return calc * 0.3
+    return (calc * 0.3).toFixed(2)
 }
 
 function calculadoraMacro(calc) {
-    return calc * 0.35
+    return (calc * 0.35).toFixed(2)
 }
 
 function calculadora() {
@@ -43,21 +45,30 @@ function calculadora() {
     const calculo = (10 * peso.value) + (6.25 * altura.value) - (5 * idade.value)
 
     if (genero.value === "fem") {
-        var gastoFem = (calculo - 161) * frequenciaExercicio()
-        var ingestaoDeCal = ingestCal(gastoFem)
-        var macroProteina = calculadoraMacroProteina(gastoMasc)
-        localStorage.setItem("gastoFem", gastoFem)
+        var gastocal = (calculo - 161) * frequenciaExercicio()
+        var gastocalorico = gastocal.toFixed(2)
+        var ingestaoDeCal = ingestCal(gastocalorico)
+        var macroProteina = calculadoraMacroProteina(gastocalorico)
+        var macro = calculadoraMacro(gastocalorico)
+
+        localStorage.setItem("gastocalorico", gastocalorico)
         localStorage.setItem("ingestCal", ingestaoDeCal)
         localStorage.setItem("macroProteina", macroProteina)
-        location.href = "../../nutritionalResults"
+        localStorage.setItem("macro", macro)
+        location.href = "../../pages/nutritionalResults"
 
     } else {
-        var gastoMasc = (calculo + 5) * frequenciaExercicio()
-        var ingestaoDeCal = ingestCal(gastoMasc)
-        var macroProteina = calculadoraMacroProteina(gastoMasc)
-        localStorage.setItem("gastoMasc", gastoMasc)
+        var gastocal = (calculo + 5) * frequenciaExercicio()
+        var gastocalorico = gastocal.toFixed(2)
+        var ingestaoDeCal = ingestCal(gastocalorico)
+        var macroProteina = calculadoraMacroProteina(gastocalorico)
+        var macro = calculadoraMacro(gastocalorico)
+
+        localStorage.setItem("gastocalorico", gastocalorico)
         localStorage.setItem("ingestCal", ingestaoDeCal)
         localStorage.setItem("macroProteina", macroProteina)
+        localStorage.setItem("macro", macro)
+
         location.href = "../../pages/nutritionalResults"
     }
 

@@ -9,8 +9,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Nutrix</title>
 </head>
 
@@ -27,13 +26,13 @@
     <div class="box-data-calculations">
         <div class="box-data-calculations-left">
             <section class="box-data-calculations-left-section">
-                <h3 class="box-data-calculations-section-title"> Gastro calorico atual</h3>
-                <div class="box-data-calculations-section-result"> Aguardando resultado </div>
+                <h3 class="box-data-calculations-section-title"> Gasto calorico atual</h3>
+                <div class="box-data-calculations-section-result" id="gastocalorico"></div>
             </section>
 
             <section class="box-data-calculations-left-section">
                 <h3 class="box-data-calculations-section-title"> Ingestão de calorias sujerida</h3>
-                <div class="box-data-calculations-section-result"> Aguardando resultado </div>
+                <div class="box-data-calculations-section-result" id="ingestaocalorica"></div>
             </section>
         </div>
 
@@ -43,15 +42,15 @@
                 <div class="box-data-calculations-section-center-result">
                     <div class="box-data-calculations-section-center-result-list-item">
                         <h4 class="box-data-calculations-section-center-result-title"> Proteína </h4>
-                        <p> Aguardando resultado</p>
+                        <p id="macroproteina"> </p>
                     </div>
                     <div class="box-data-calculations-section-center-result-list-item">
                         <h4 class="box-data-calculations-section-center-result-title"> Gordura </h4>
-                        <p> Aguardando resultado</p>
+                        <p class="macro"></p>
                     </div>
                     <div class="box-data-calculations-section-center-result-list-item">
                         <h4 class="box-data-calculations-section-center-result-title"> Carboidratos </h4>
-                        <p> Aguardando resultado</p>
+                        <p class="macro2"> </p>
                     </div>
                 </div>
             </section>
@@ -60,7 +59,7 @@
         <div class="box-data-calculations-rigth">
             <section class="box-data-calculations-left-section">
                 <h3 class="box-data-calculations-section-title"> IMC </h3>
-                <div class="box-data-calculations-section-result"> Aguardando resultado </div>
+                <div class="box-data-calculations-section-result" id="imc"> Aguardando resultado </div>
             </section>
             <section>
                 <p>
@@ -82,4 +81,5 @@
 
 </div>
 <script type="text/javascript" src="script.js"></script>
+
 </html>

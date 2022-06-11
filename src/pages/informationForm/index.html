@@ -2,91 +2,88 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../../assets/silverware.svg" />
-  <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <title>Nutrix</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../assets/silverware.svg" />
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Nutrix</title>
 </head>
 
 <body>
-  <header>
-    <a href="../homepage">
-      <img class="arrow" src="../../assets/arrow.svg" alt="seta">
-    </a>
-    <h1 class="header-title">
-      Dados necessários para calcular a dieta
-    </h1>
-  </header>
-  <form action="../nutritionalResults">
-    <div class="content">
-      <div class="onlyform">
-        <div class="field">
-          <label for="objetivo">Objetivo</label>
-          <select name="objetivo" id="Objetivo" required>
+    <header>
+        <a href="../homepage">
+            <img class="arrow" src="../../assets/arrow.svg" alt="seta">
+        </a>
+        <h1 class="header-title">
+            Dados necessários para calcular a dieta
+        </h1>
+    </header>
+    <form action="../nutritionalResults">
+        <div class="content">
+            <div class="onlyform">
+                <div class="field">
+                    <label for="objetivo">Objetivo</label>
+                    <select name="objetivo" id="objetivo" required>
             <option selected disabled value="">Selecione</option>
             <option value="perdaDePeso">Perda de peso</option>
-            <option value="manutençãoDoPeso">Manutenção do peso</option>
+            <option value="manutencaoDoPeso">Manutenção do peso</option>
             <option value="ganhoDePeso">Ganho de peso</option>
           </select>
-        </div>
-        <div class="field">
-          <label for="idade">Idade</label>
-          <input type="number" name="idade" id="idade" placeholder="anos" min="1" max="120" required>
-        </div>
-        <div class="field">
-          <label for="Gênero">
+                </div>
+                <div class="field">
+                    <label for="idade">Idade</label>
+                    <input type="number" name="idade" id="idade" placeholder="anos" min="1" max="120" required>
+                </div>
+                <div class="field">
+                    <label for="Gênero">
             <div>Sexo biológico</div>
           </label>
-          <select name="sexo" id="sexo biologico" required>
+                    <select name="sexo" id="genero" required>
             <option selected disabled value="">Selecione</option>
             <option value="mas">Masculino</option>
             <option value="fem">Feminino</option>
           </select>
-        </div>
-        <div class="field">
-          <label for="peso">Peso</label>
-          <input type="number" name="peso" id="peso" placeholder="kg" min="1" max="300" required>
-        </div>
-        <div class="field">
-          <label for="altura">Altura</label>
-          <input type="number" name="altura" id="altura" placeholder="cm" min="60" max="240" required>
-        </div>
-        <div class="field">
-          <label for="frequência da atividade física">
+                </div>
+                <div class="field">
+                    <label for="peso">Peso</label>
+                    <input type="number" name="peso" id="peso" placeholder="kg" min="1" max="300" required>
+                </div>
+                <div class="field">
+                    <label for="altura">Altura</label>
+                    <input type="number" name="altura" id="altura" placeholder="cm" min="60" max="240" required>
+                </div>
+                <div class="field">
+                    <label for="frequência da atividade física">
             <div>Frequência</div>
             <div>da atividade</div>
             <div>física</div>
           </label>
-          <select name="frequencia" id="Frequência da atividade física" required>
-            <option selected disabled value="">Selecione</option>
-            <option value="sedentário">Sedentário</option>
+                    <select name="frequencia" id="frequencia" required>
+            <option selected disabled >Selecione</option>
+            <option value="sedentario">Sedentário</option>
             <option value="exercicioLeve">Exercício Leve</option>
             <option value="exercicioModerado">Exercício Moderado</option>
           </select>
+                </div>
+            </div>
+            <img src="../../assets/foodForm.png">
         </div>
-      </div>
-      <img src="../../assets/foodForm.png">
-    </div>
-    </div>
-    <div class="form-footer">
-      <fieldset class="info">
-        Os dados coletados são usados na equação
-        de Harris-Benedict que é utilizada para calcular o gasto
-        de calorias atual do seu metabolismo e coordenalo com
-        o seu objetivo para criar uma dieta que te auxilie na sua
-        jornada.
-      </fieldset>
-      <button class="btn-next" type="submit">
+        </div>
+        <div class="form-footer">
+            <fieldset class="info">
+                Os dados coletados são usados na equação de Harris-Benedict que é utilizada para calcular o gasto de calorias atual do seu metabolismo e coordenalo com o seu objetivo para criar uma dieta que te auxilie na sua jornada.
+            </fieldset>
+            <button class="btn-next" onclick="calculadora()" type="button">
         <div>Avançar</div>
         <img src="../../assets/arrow2.png" alt="seta">
       </button>
-    </div>
-  </form>
+        </div>
+    </form>
 </body>
 <script type="text/javascript" src="script.js"></script>
+
 </html>

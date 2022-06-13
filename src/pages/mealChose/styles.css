@@ -86,7 +86,7 @@ main {
 
 .meal-option {
     width: 80%;
-    height: 500px;
+    height: 510px;
     background-color: var(--color-secondary-green);
     border-radius: 49px;
     padding-bottom: 8px;
@@ -94,18 +94,29 @@ main {
     cursor: pointer;
 }
 
-.meal-option:active {
+.active {
     border: 3px var(--color-darkgreen) solid;
     color: var(--color-darkgreen);
 }
 
-.meal-option:active>article {
+.active > article {
     background: var(--color-darkgreen);
     color: var(--color-secondary-green);
 }
 
+.active .modal-makings {
+    color: black;
+}
+
+.active .modal-title{
+    background-color: var(--color-darkgreen);
+    color: var(--color-primary-green);
+}
+
+
 .meal-title {
     padding-top: 15px;
+    height: 80px;
     padding-bottom: 10px;
     font-size: 30px;
     font-weight: 900;
@@ -215,7 +226,7 @@ main {
 
 .modal-makings {
     width: 80%;
-    height: 400px;
+    height: 250px;
     background-color: var(--color-secondary-green);
     border-radius: 49px;
     overflow: scroll;
@@ -231,6 +242,7 @@ main {
 
 .modal-title {
     display: flex;
+    flex-direction: column;
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
@@ -240,11 +252,12 @@ main {
 }
 
 .modal-title>h2 {
+    font-size: 25px;
     padding-left: 20px;
-    padding-right: 10px;
 }
 
 .modal-title>p {
+    padding-left: 20px;
     padding-top: 5px;
     font-size: 22px;
 }
@@ -259,7 +272,6 @@ main {
 .food-info-line>h3 {
     font-weight: 400;
     font-size: 25px;
-
 }
 
 .food-info-line>img {

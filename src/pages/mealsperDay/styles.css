@@ -69,9 +69,10 @@ main ol li {
     text-align: center;
     justify-content: space-evenly;
     cursor: pointer;
+    font-weight: 700;
 }
 
-main ol li:active {
+.active {
     background-color: var(--color-darkgreen-hover);
 }
 

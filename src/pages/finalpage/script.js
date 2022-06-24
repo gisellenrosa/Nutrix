@@ -602,8 +602,7 @@ function pickSelectedMeals() {
 }
 
 function downloadPDF() {
-  alert('Copie o link da tela')
-  window.location = 'https://webtopdf.com/pt/'
+  window.print()
 }
 
 pickSelectedMeals();

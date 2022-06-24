@@ -23,235 +23,49 @@
     </header>
 
     <div class="full">
-      <form action="#" method="post" class="barra">
+      <form method="get" class="barra">
         <input type="text" name="search" id="search" placeholder="Pesquise seu alimento" required>
-        <button type="submit" class="lupa"> <img src="..\..\assets\lupa2.svg" alt="lupa"></button>
+        <a onclick="btn_search()" class="lupa"> <img src="..\..\assets\lupa2.svg" alt="lupa"></a>
       </form>
       <main>
         <div class="modal-makings">
           <p>
-          <div class="modal-title">
-            <h2>Banana</h2>
-            <p>100g</p>
+          <div class="modal-title" id="modal-title">
+            
           </div>
 
           <div class="food-info-line">
             <img class="meal-info-icons" src="..\..\assets\carb.png" alt="Carboidrato">
-            <h3 class="meal-quantity-carbohydrate">
-              350 gramas
+            <h3 class="meal-quantity-carbohydrate" id="meal-quantity-carbohydrate">
+              
             </h3>
 
           </div>
 
           <div class="food-info-line">
             <img class="meal-info-icons" src="..\..\assets\prot.png" alt="Proteina">
-            <h3 class="meal-quantity-protein">
-              350 gramas
+            <h3 class="meal-quantity-protein" id="meal-quantity-protein">
+              
             </h3>
           </div>
 
           <div class="food-info-line">
             <img class="meal-info-icons" src="..\..\assets\kcal.png" alt="Caloria">
-            <h3 class="meal-quantity-kcal">
-              350 kcal
+            <h3 class="meal-quantity-kcal" id="meal-quantity-kcal">
+              
             </h3>
           </div>
 
           <div class="food-info-line">
             <img class="meal-info-icons" src="..\..\assets\gordura.png" alt="Gordura">
-            <h3 class="meal-quantity-fat">
-              350 gramas
+            <h3 class="meal-quantity-fat" id="meal-quantity-fat">
+              
             </h3>
           </div>
           </p>
-        </div>
-        <div class="modal-makings">
-          <p>
-          <div class="modal-title">
-            <h2>Banana</h2>
-            <p>100g</p>
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\carb.png" alt="Carboidrato">
-            <h3 class="meal-quantity-carbohydrate">
-              350 gramas
-            </h3>
-
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\prot.png" alt="Proteina">
-            <h3 class="meal-quantity-protein">
-              350 gramas
-            </h3>
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\kcal.png" alt="Caloria">
-            <h3 class="meal-quantity-kcal">
-              350 kcal
-            </h3>
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\gordura.png" alt="Gordura">
-            <h3 class="meal-quantity-fat">
-              350 gramas
-            </h3>
-          </div>
-          </p>
-        </div>
-        <div class="modal-makings">
-          <p>
-          <div class="modal-title">
-            <h2>Banana</h2>
-            <p>100g</p>
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\carb.png" alt="Carboidrato">
-            <h3 class="meal-quantity-carbohydrate">
-              350 gramas
-            </h3>
-
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\prot.png" alt="Proteina">
-            <h3 class="meal-quantity-protein">
-              350 gramas
-            </h3>
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\kcal.png" alt="Caloria">
-            <h3 class="meal-quantity-kcal">
-              350 kcal
-            </h3>
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\gordura.png" alt="Gordura">
-            <h3 class="meal-quantity-fat">
-              350 gramas
-            </h3>
-          </div>
-          </p>
-        </div>
-        <div class="modal-makings">
-          <p>
-          <div class="modal-title">
-            <h2>Banana</h2>
-            <p>100g</p>
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\carb.png" alt="Carboidrato">
-            <h3 class="meal-quantity-carbohydrate">
-              350 gramas
-            </h3>
-
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\prot.png" alt="Proteina">
-            <h3 class="meal-quantity-protein">
-              350 gramas
-            </h3>
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\kcal.png" alt="Caloria">
-            <h3 class="meal-quantity-kcal">
-              350 kcal
-            </h3>
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\gordura.png" alt="Gordura">
-            <h3 class="meal-quantity-fat">
-              350 gramas
-            </h3>
-          </div>
-          </p>
-        </div>
-        <div class="modal-makings">
-          <p>
-          <div class="modal-title">
-            <h2>Banana</h2>
-            <p>100g</p>
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\carb.png" alt="Carboidrato">
-            <h3 class="meal-quantity-carbohydrate">
-              350 gramas
-            </h3>
-
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\prot.png" alt="Proteina">
-            <h3 class="meal-quantity-protein">
-              350 gramas
-            </h3>
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\kcal.png" alt="Caloria">
-            <h3 class="meal-quantity-kcal">
-              350 kcal
-            </h3>
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\gordura.png" alt="Gordura">
-            <h3 class="meal-quantity-fat">
-              350 gramas
-            </h3>
-          </div>
-          </p>
-        </div>
-        <div class="modal-makings">
-          <p>
-          <div class="modal-title">
-            <h2>Banana</h2>
-            <p>100g</p>
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\carb.png" alt="Carboidrato">
-            <h3 class="meal-quantity-carbohydrate">
-              350 gramas
-            </h3>
-
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\prot.png" alt="Proteina">
-            <h3 class="meal-quantity-protein">
-              350 gramas
-            </h3>
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\kcal.png" alt="Caloria">
-            <h3 class="meal-quantity-kcal">
-              350 kcal
-            </h3>
-          </div>
-
-          <div class="food-info-line">
-            <img class="meal-info-icons" src="..\..\assets\gordura.png" alt="Gordura">
-            <h3 class="meal-quantity-fat">
-              350 gramas
-            </h3>
-          </div>
-          </p>
-        </div>
       </main>
     </div>
     
 </body>
+<script type="text/javascript" src="script.js"></script>
 </html>

@@ -1,9 +1,4 @@
 
-
-//const jsPDF = require('jspdf')
-
-
-
 let mealsJSON = [
   {
     "id": 0,
@@ -458,6 +453,10 @@ let mealsJSON = [
   }
 ]
 
+
+// Essa função baseando-se nas refeições selecionadas na última tela cria o HTML de cada item
+// posicionando os valores dentro
+
 function pickSelectedMeals() {
   let totalMeals = localStorage.getItem("selectedMealsPerDay")
   for (i = 1; i <= totalMeals; i++) {
@@ -603,7 +602,8 @@ function pickSelectedMeals() {
 }
 
 function downloadPDF() {
-  window.print()
+  alert('Copie o link da tela')
+  window.location = 'https://webtopdf.com/pt/'
 }
 
 pickSelectedMeals();

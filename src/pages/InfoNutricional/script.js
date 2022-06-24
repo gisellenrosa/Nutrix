@@ -473,7 +473,7 @@ function btn_search() {
 
         let searchedMeal = retornaListaProduto(searchField, MealsJson)
 
-        document.getElementById("modal-title").innerHTML = searchedMeal[i].title + ' (100 gramas)';
+        document.getElementById("modal-title").innerHTML = searchedMeal[i].title;
         document.getElementById("meal-quantity-carbohydrate").innerHTML = searchedMeal[i].macros.carbohydrates;
         document.getElementById("meal-quantity-protein").innerHTML = searchedMeal[i].macros.proteins;
         document.getElementById("meal-quantity-kcal").innerHTML = searchedMeal[i].macros.calories;

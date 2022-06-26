@@ -1,7 +1,8 @@
 <h1 align="center">NUTRIX</h1>
 
 
-![image](https://user-images.githubusercontent.com/68014636/175835645-62b2509c-6cd7-4679-b0ce-3c4bddc1e812.png)
+![image](https://user-images.githubusercontent.com/68014636/175835716-fc358fc0-4eb8-4ace-bee6-f6a3970df487.png)
+
 
 
 

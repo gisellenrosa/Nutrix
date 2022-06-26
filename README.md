@@ -3,6 +3,9 @@
 <p align="center">
 
 <img src="https://www.notion.so/Images-1a435e04da98431797cbdb1baf9ea487#df3d1b5f5d994a9a923f1860006fdda3" />
+ 
+ ![image](https://user-images.githubusercontent.com/68014636/175835519-b61d86a4-e1fc-44d3-8cb5-4b3bff8a7c68.png)
+
 </p>
 
 <h3 align="center">TABELA DE CONTEÚDOS
@@ -48,7 +51,7 @@ As seguintes tecnologias foram utilizadas no projeto:
 
 ### Aplicação
 
--link Heroku: XXX
+(https://gisellenrosa.github.io/Nutrix)
 
 
 ### Equipe
@@ -56,6 +59,10 @@ As seguintes tecnologias foram utilizadas no projeto:
 Este projeto contou com a contribuição de:
 <ul>
  <li><a href="https://www.linkedin.com/in/gisellenrosa/">Giselle Nepomuceno Rosa</a></li>
-
+ <li><a href="https://github.com/Andre98B">André Barone</a></li>
+ <li><a href="https://www.linkedin.com/in/philipe-rocha-0684021b2">Philipe Rocha</a></li>
+ <li><a href="https://github.com/Trafani">Vitor Trafani</a></li>
+ <li><a href="https://github.com/GabrieldeAlmeidaCarvalho">Gabriel de Almeida</a></li>
+ <li><a href="https://www.linkedin.com/in/gisellenrosa/">Janaina Rodrigues</a></li>
 </ul>
 

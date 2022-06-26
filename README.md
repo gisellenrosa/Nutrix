@@ -61,6 +61,6 @@ Este projeto contou com a contribuição de:
  <li><a href="https://www.linkedin.com/in/philipe-rocha-0684021b2">Philipe Rocha</a></li>
  <li><a href="https://github.com/Trafani">Vitor Trafani</a></li>
  <li><a href="https://github.com/GabrieldeAlmeidaCarvalho">Gabriel de Almeida</a></li>
- <li><a href="https://www.linkedin.com/in/gisellenrosa/">Janaina Rodrigues</a></li>
+ <li><a href="https://github.com/Jandeoli77">Janaina Rodrigues</a></li>
 </ul>
 

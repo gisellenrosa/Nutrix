@@ -1,7 +1,7 @@
 <h1 align="center">NUTRIX</h1>
 
 <div align="center">
-  ![image](https://user-images.githubusercontent.com/68014636/175835618-2170a919-9ac2-4f4b-9814-968c0876619d.png)
+  https://user-images.githubusercontent.com/68014636/175835618-2170a919-9ac2-4f4b-9814-968c0876619d.png
 </div>
 
 

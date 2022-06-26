@@ -3,9 +3,6 @@
 <p align="center">
 
 ![image](https://user-images.githubusercontent.com/68014636/175835533-0139afbf-565b-4048-96a3-776b5b2d4abc.png)
- 
- ![6kyk8j](https://user-images.githubusercontent.com/68014636/175835893-b5ecc3ec-eb73-4a73-ae83-d55a7779651e.gif)
-
 
 </p>
 

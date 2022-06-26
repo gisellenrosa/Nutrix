@@ -1,7 +1,7 @@
 let nextButton = document.getElementById('next-button');
 
 nextButton.onclick = function() {
-    window.location = '../mealsperDpay';
+    window.location = '../mealsperDay';
 }
 
 var imc = localStorage.getItem("imc")

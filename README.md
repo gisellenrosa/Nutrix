@@ -2,9 +2,7 @@
 
 <p align="center">
 
-<img src="https://www.notion.so/Images-1a435e04da98431797cbdb1baf9ea487#df3d1b5f5d994a9a923f1860006fdda3" />
- 
- ![image](https://user-images.githubusercontent.com/68014636/175835519-b61d86a4-e1fc-44d3-8cb5-4b3bff8a7c68.png)
+![image](https://user-images.githubusercontent.com/68014636/175835533-0139afbf-565b-4048-96a3-776b5b2d4abc.png)
 
 </p>
 
